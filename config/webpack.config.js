@@ -49,12 +49,7 @@ module.exports = {
         test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader',
         query: {
           "cacheDirectory": true,
-          "presets": ['es2015', 'stage-0', 'react'],
-          "env": {
-            "development": {
-              "presets": ["react-hmre"]
-            }
-          }
+          "presets": ['es2015', 'stage-0', 'react']
         }
       },
       { test: /\.gif/, loader: "file-loader?name=../files/[hash:6].[ext]" },
